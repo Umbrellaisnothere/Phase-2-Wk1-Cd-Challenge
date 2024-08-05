@@ -1,8 +1,9 @@
 import React from "react";
 
 const newTransactions = () => {
-    return (
 
+    return (
+        <div>New Transactions</div>
     );
 }
 
