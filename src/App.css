@@ -8,6 +8,10 @@ body {
   color: crimson;
 }
 
+h1 {
+  color: chocolate;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
