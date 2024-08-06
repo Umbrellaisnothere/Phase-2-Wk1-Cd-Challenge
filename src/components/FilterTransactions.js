@@ -1,6 +1,6 @@
 import React from "react";
 
-const filterTransactions = () => {
+const FilterTransactions = () => {
 
     return (
         <div>Filtered Transactions</div>
@@ -8,4 +8,4 @@ const filterTransactions = () => {
 }
 
 
-export default filterTransactions;
+export default FilterTransactions;
