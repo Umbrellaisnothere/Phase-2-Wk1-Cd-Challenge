@@ -1,5 +1,4 @@
 import React from "react";
-import FilterTransactions from "./FilterTransactions";
 
 const TransactionsList = () => {
     
