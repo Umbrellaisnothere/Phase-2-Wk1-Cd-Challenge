@@ -16,7 +16,15 @@ function Form() { // State variables
     };
 
     // Fetch request
-    fetch("")
+    fetch("https://bank-of-flatiron-backend-three.vercel.app/transactions", {
+        method: "POST",
+        header: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: JSON.stringify(formData),
+    })
+    
     .then((response) => response.json())
     .then((data) => {
         console.log("Post s Successful", data);
@@ -27,11 +35,7 @@ function Form() { // State variables
 
 
 
-    
+
     }
-
-
-}
-
 
 export default Form;

@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import TransactionsList from './components/TransactionsList';
 import SearchBar from './components/SearchBar';
+import Form from './Form';
+import TransactionsList from './components/TransactionsList';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       </div>
 
       <SearchBar />
-      
+      <Form />
       <TransactionsList />
     </div>
   );
