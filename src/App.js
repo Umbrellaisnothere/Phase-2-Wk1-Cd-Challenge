@@ -1,5 +1,6 @@
 import './App.css';
 import TransactionsList from './components/TransactionsList';
+// import searchBar from './components/searchBar';
 
 
 function App() {
