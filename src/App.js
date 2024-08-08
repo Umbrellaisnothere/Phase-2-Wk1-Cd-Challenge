@@ -11,7 +11,7 @@ function App() {
     <div className="App">
 
       <div className='Heading'>
-        <h1>Flatiron Bank</h1>
+        <h1 className='Heading-text'>Flatiron Bank</h1>
       </div>
 
       <SearchBar />

@@ -12,6 +12,10 @@ body {
   color: chocolate;
 }
 
+.Heading .Heading-text {
+  font-weight: 1000;
+}
+
 .search-bar {
   border-radius: 5px;
   padding: 10px;
