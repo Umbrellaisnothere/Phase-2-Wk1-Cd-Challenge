@@ -1,6 +1,6 @@
 import './App.css';
 import TransactionsList from './components/TransactionsList';
-// import searchBar from './components/searchBar';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
@@ -11,8 +11,7 @@ function App() {
       <div className='Heading'>
         <h1>Flatiron Bank</h1>
       </div>
-      
-      <searchBar />
+      <SearchBar />
       <TransactionsList />
     </div>
   );

@@ -4,11 +4,13 @@ function searchBar ({ search }) {
     return (
         <div className="search-bar">
             <input 
-            type="text"
             placeholder="Search type of Transaction.."
+            type="text"
+            required
             />
 
         </div>
-    )
-}
+    );
+};
+
 export default searchBar;
