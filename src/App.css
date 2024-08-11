@@ -24,7 +24,6 @@ body {
 
 .Transaction-list {
   display: table-row;
-  /* justify-items: flex-start; */
 }
 
 .Transaction-list .tableData {
