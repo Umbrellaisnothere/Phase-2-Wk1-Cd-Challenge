@@ -27,15 +27,16 @@ function Form() { // State variables
     
     .then((response) => response.json())
     .then((data) => {
-        console.log("Post s Successful", data);
+        console.log("Post is Successful", data);
     })
     .catch((error) => {
         console.error("Error", error);
     });
 
-
-
-
-    }
+    setDate('');
+    setDescription('');
+    setCategory('');
+    setAmount('');
+};
 
 export default Form;
