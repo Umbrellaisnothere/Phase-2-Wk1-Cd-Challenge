@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-function FilterTransactions ({ onFilter }) {
+function FilterTransactions ({ transactions, onFilter }) {
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearch = (e) => {
-    const term = e.target.value();
+    const term = e.target.value;
     setSearchTerm(term);
 
-    const filteredTransactions = transactions.filter((transtion) => {
-        return transtion.description.toLowerCase().includes(term.toLowerCase());
+    const filteredTransactions = transactions.filter((transaction) => {
+        return transaction.description.toLowerCase().includes(term.toLowerCase());
     });
 
         onFilter(filteredTransactions);
