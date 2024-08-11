@@ -1,4 +1,52 @@
-# Getting Started with Create React App
+# Transaction Management App
+----
+
+This application displays and manages a list of transactions. 
+- It includes several components that work together to fetch, filter, and display transaction data, as well as to delete specific transactions.
+
+## Components
+### 1. Transaction
+
+This component represents a single transaction row in the table data.
+
+The Props:
+
+- `transtion`: This is an __*object*__ containing the transaction data __(date, description, category, amount, id)__.
+- `onDelete`: A function that handles the deletion of a transaction by its own ID.
+
+## 2. TransactionsList
+
+This component manages the list of transactions, including fetching data from the server, filtering, and deleting.
+
+__State__:
+
+- `transactions`: Stores all transactions fetched from the server.
+
+- `filteredTransactions`: Stores the transactions that match the current search.
+ 
+A Key Function:
+
+- `handleDelete`: This Removes a transaction from the list by filtering it out.
+
+## 3. SearchBar
+
+This component provides a search input to filter out transactions.
+
+The Props:
+
+- `onSearch`: A function to handle any search input change.
+
+## 4. FilterTransactions
+
+This component filters transactions based on the search input.
+
+State:
+
+- `searchTerm`: Stores the current search term.
+--------
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +116,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+This application was Constructed by:
+[Keith](https://github.com/Umbrellaisnothere) :)!
