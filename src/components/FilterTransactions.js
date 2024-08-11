@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
-const FilterTransactions = () => {
+function FilterTransactions ({ onFilter }) {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearch = (e) => {
+    const term = e.target.value();
+    setSearchTerm(term);
+
+    const filteredTransactions = transactions.filter((transtion) => {
+        return transtion.description.toLowerCase().includes(term.toLowerCase());
+    });
+
+        onFilter(filteredTransactions);
+    };
 
     return (
-        <div>Filtered Transactions</div>
+        <input
+        placeholder="Search for a transaction"
+        type="text"
+        value={searchTerm}
+        onChange={handleSearch}
+        />
     );
 }
 

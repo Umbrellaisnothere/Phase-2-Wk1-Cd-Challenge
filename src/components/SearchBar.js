@@ -1,11 +1,13 @@
 import React from "react";
 
-function searchBar ({ search }) {
+function SearchBar ({ onSearch }) {
     return (
         <div className="search-bar">
+
             <input 
             placeholder="Search type of Transaction.."
             type="text"
+            onChange={(e) => onSearch(e.target.value)}
             required
             />
 
@@ -13,4 +15,4 @@ function searchBar ({ search }) {
     );
 };
 
-export default searchBar;
+export default SearchBar;
