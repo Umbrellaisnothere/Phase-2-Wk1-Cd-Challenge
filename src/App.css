@@ -19,8 +19,24 @@ body {
 .search-bar {
   border-radius: 5px;
   padding: 10px;
-
+  background-color: white;
 }
+
+.Transaction-list {
+  display: table-row;
+  /* justify-items: flex-start; */
+}
+
+.Transaction-list .tableData {
+  display: table-cell;
+  text-align: center;
+  border: solid 5px coral;
+}
+
+.delete-btn {
+  background-color: darkred;
+}
+
 
 /* .App-logo {
   height: 40vmin;
