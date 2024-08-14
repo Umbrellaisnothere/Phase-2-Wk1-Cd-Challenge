@@ -24,13 +24,16 @@ function TransactionsList() {
     return (
             <div>
 
-              <h1 className="Transaction-form">
+              <h1 className="transaction-form">
                 Transaction List
               </h1>
 
-              <FilterTransactions transactions={transactions} onFilter={setFilteredTransactions} />
+              <FilterTransactions 
+              transactions={transactions} 
+              onFilter={setFilteredTransactions} 
+              />
               
-              <table className="table">
+              <table>
                 <thead>
                   <tr>
                     <th>Date</th>
@@ -43,7 +46,11 @@ function TransactionsList() {
 
                 <tbody>
                   {filteredTransactions.map((transtion) => (
-                    <Transactions key={transtion.id} transtion={transtion} onDelete={handleDelete} />
+                    <Transactions 
+                    key={transtion.id} 
+                    transtion={transtion} 
+                    onDelete={handleDelete} 
+                    />
                   ))}
                 </tbody>
                 

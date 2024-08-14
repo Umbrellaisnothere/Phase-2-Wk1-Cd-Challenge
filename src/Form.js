@@ -84,11 +84,14 @@ return (
                 onChange={handleOnChange(setAmount)}
             />
 
+<div className="submit-container">
             <input
             className="submit"
             type="submit"
             value="Add Transaction"
             />
+
+</div>
 
         </form>        
     </div>

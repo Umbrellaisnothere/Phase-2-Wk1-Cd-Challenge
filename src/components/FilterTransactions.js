@@ -15,8 +15,9 @@ function FilterTransactions ({ transactions, onFilter }) {
     };
 
     return (
+
         <input
-        placeholder="Search for a transaction"
+        placeholder="Search for a transaction.."
         type="text"
         value={searchTerm}
         onChange={handleSearch}

@@ -16,24 +16,51 @@ body {
   font-weight: 1000;
 }
 
-.search-bar {
-  border-radius: 5px;
-  padding: 10px;
-  background-color: white;
+.submit-container {
+  margin-top: 20px; 
+  text-align: center; 
 }
 
-.Transaction-list {
+.submit {
+  background-color: gray;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit:hover {
+  background-color: darkslategrey;
+}
+
+.transaction-form {
+  border: solid ;
+}
+
+.transaction-list {
   display: table-row;
 }
 
-.Transaction-list .tableData {
+.transaction-list .tableData {
   display: table-cell;
   text-align: center;
   border: solid 5px coral;
 }
 
 .delete-btn {
-  background-color: darkred;
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+  background-color: red
 }
 
 
