@@ -43,6 +43,8 @@ This component filters transactions based on the search input.
 State:
 
 - `searchTerm`: Stores the current search term.
+
+- This is the [live server](https://phase-2-wk1-cd-challenge.vercel.app/)
 --------
 
 
